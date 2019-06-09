@@ -36,7 +36,6 @@ var instance:Repository?=null
             Observer {
                 if(it?.mainResponse!=null)
                 {
-                    Log.e("DB Response",it?.mainResponse.toString())
                     responseModelValue?.value=it?.mainResponse!!
                 }
                 else
@@ -57,14 +56,12 @@ var instance:Repository?=null
             {
                 override fun onFailure(call: Call<MainResponse>?, t: Throwable?) {
 
-                    Log.e("MainResponse",t?.message.toString())
                     responseModelValue?.value=null
 
                 }
 
                 override fun onResponse(call: Call<MainResponse>?, mainResponse: retrofit2.Response<MainResponse>?) {
 
-                    Log.e("MainResponse",mainResponse?.body()?.toString())
                     mainResponse?.body()?.let {
 
                         var responseModel=ResponseModel(ApplicationConstants.PRIMARY_KEY_RESPONSE,it)

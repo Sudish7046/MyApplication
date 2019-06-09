@@ -25,11 +25,9 @@ abstract class AppDatabase:RoomDatabase() {
                     AppDatabase::class.java, "ResponseDb.db"
                 ).addCallback(object : RoomDatabase.Callback(){
                     override fun onCreate(db: SupportSQLiteDatabase) {
-                        Log.d("ResponseDb.db","Database created")
                         super.onCreate(db)
                     }
                     override fun onOpen(db: SupportSQLiteDatabase) {
-                        Log.d("ResponseDb.db","Database opened")
                         super.onOpen(db)
                     }
                 })

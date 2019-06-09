@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:orientation="vertical"
+                  android:layout_marginTop="@dimen/scale_10dp"
+                  android:layout_marginLeft="@dimen/scale_16dp"
+                  android:layout_marginRight="@dimen/scale_15dp"
+                  android:background="@color/theme_grey_faint"
+    >
+
+
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/scale_5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_marginTop="@dimen/scale_10dp">
+            <android.support.v7.widget.RecyclerView
+                    android:id="@+id/ranking_holder_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</layout>

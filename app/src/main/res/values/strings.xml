@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="popular_txt">Popular</string>
+    <string name="category_txt">Categories</string>
+
+    <string name="less_txt">Less</string>
+    <string name="more_txt">More</string>
+    <string name="rupee">\u20B9</string>
+
+
+</resources>
